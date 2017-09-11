@@ -1,11 +1,24 @@
 import React, {Component} from 'react';
-import Home from './Home';
+import RouterMap from "../routes/index";
 export default class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      done:false
+    }
+  }
   render() {
     return (
       <div>
-        <Home/>
+        {
+          this.state.done?<RouterMap/>:<div>正在加载，请稍等。。。</div>
+        }
       </div>
     )
+  }
+  componentDidMount(){
+      this.setState({
+        done:true
+      })
   }
 }
