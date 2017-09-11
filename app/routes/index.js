@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+//路由的两种类型 HashRouter BrowserRoute
 import {
   HashRouter as Router,
   Route
