@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 import RouterMap from "../routes/index";
-export default class App extends Component {
+import {connect} from 'react-redux'
+//绑定actionCreator组成的对象
+import {bindActionCreators} from 'redux';
+//获取所有的actionCreator组成的对象
+import * as Actions from '../actions/userInfo';
+
+ class App extends Component {
   constructor(){
     super();
     this.state={
@@ -22,3 +28,13 @@ export default class App extends Component {
       })
   }
 }
+export default connect(
+  state=>{
+    return {}
+  },
+  dispatch=>{
+    return {
+      userActions:bindActionCreators(Actions,dispatch)
+    }
+  }
+)(App)//将状态和动作以属性的形式传递给了App
