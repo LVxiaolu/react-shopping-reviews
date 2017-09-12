@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux';
 //获取所有的actionCreator组成的对象
 import * as Actions from '../actions/userInfo';
-
+import {getStorage} from '../local'
  class App extends Component {
   constructor(){
     super();
@@ -23,6 +23,14 @@ import * as Actions from '../actions/userInfo';
     )
   }
   componentDidMount(){
+      let cityName=getStorage('cityName');
+      if(cityName == null){
+        cityName="邯郸"
+      }
+    //页面加载后，设置一个城市
+    this.props.userActions.update({
+      cityName
+    });
       this.setState({
         done:true
       })
