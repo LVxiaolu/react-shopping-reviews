@@ -19,8 +19,8 @@ export default class Star extends Component{
         return (
             <div>
                 {this.state.arr.map((item,index)=>(
-                    item?<i className="iconfont icon-collection_fill font" key={index}></i>:
-                   <i className="iconfont icon-collection font" key={index}></i>
+                    item?<i className="iconfont icon-shoucang font" key={index}></i>:
+                   <i className="iconfont icon-shoucang-xianxing font" key={index}></i>
                 ))}
             </div>
         )
