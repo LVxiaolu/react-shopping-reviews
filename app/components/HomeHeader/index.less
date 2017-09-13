@@ -4,29 +4,31 @@
   align-items: center;
   color: #fff;
   a{color:#fff}
+  & :nth-child(1){
+    flex: 1;
+    display: flex;
+  }
   .city{
     display: flex;
-    flex: 1;
     justify-content: center;
     align-items: center;
   }
   .search{
-    display: flex;
-    flex:4;
+    flex: 4;
     background: #fff;
     border-radius: 10px;
     height: 30px;
+    display: flex;
     align-items: center;
-    i{
-      color: #666;
-      margin:0 5px;}
+    i{color:#666;margin: 0 5px}
     input{
       border: none;
+      width: 100%;
     }
   }
-  .profile{
+  a{
+    flex: 0.5;
     display: flex;
-    flex:0.5;
     justify-content: center;
   }
 }
