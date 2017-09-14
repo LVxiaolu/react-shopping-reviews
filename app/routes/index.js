@@ -10,7 +10,7 @@ import Detail from "../contaniers/Detail";
 import Login from "../contaniers/Login";
 import User from "../contaniers/User";
 import City from "../contaniers/City";
-
+import Search from "../contaniers/Search";
 
 export default class RouterMap extends Component {
   render() {
@@ -24,6 +24,7 @@ export default class RouterMap extends Component {
             <Route path="/login/:route?" component={Login}/>
             <Route path="/user" component={User}/>
             <Route path="/city" component={City}/>
+            <Route path="/search/:kind/:keyword?" component={Search}/>
           </switch>
         </Router>
       </div>

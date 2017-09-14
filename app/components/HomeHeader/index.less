@@ -1,17 +1,16 @@
 .home-header{
   height: 48px;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: #fff;
-  a{color:#fff}
+  a{flex: 0.5;
+    display: flex;
+    justify-content: center;
+    color:#fff}
   & :nth-child(1){
     flex: 1;
     display: flex;
-  }
-  .city{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .search{
     flex: 4;
@@ -26,9 +25,8 @@
       width: 100%;
     }
   }
-  a{
+  .profile{
     flex: 0.5;
     display: flex;
-    justify-content: center;
   }
 }
