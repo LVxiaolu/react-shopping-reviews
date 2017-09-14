@@ -49,6 +49,7 @@ $ yarn add swipe-js-iso react-swipe
 ```
 ## 部分截图
 
+<img src="https://github.com/LVxiaolu/react-shopping-reviews/blob/master/screenshots/detail.png" width="365" height="619"/> <img src="https://github.com/LVxiaolu/react-shopping-reviews/blob/master/screenshots/home.png" width="365" height="619"/>
 
 ## 目录结构
 - components 组件 木偶组件
