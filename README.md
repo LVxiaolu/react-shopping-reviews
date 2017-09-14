@@ -1,5 +1,18 @@
 ## react技术栈
 - react react-router4 redux react-redux
+## 项目运行
+```
+git clone https://github.com/LVxiaolu/react-shopping-reviews.git  
+
+cd react-shopping-reviews
+
+npm install || yarn install
+
+run server.js
+
+npm run start
+```
+
 ## 初始化package.json
 ```
 $ yarn init -y
@@ -34,6 +47,8 @@ $ yarn add swipe-js-iso react-swipe
 "start","webpack-dev-server --port 5000 --open --progress --colors",
 "build","webpack -p"
 ```
+## 部分截图
+
 
 ## 目录结构
 - components 组件 木偶组件
